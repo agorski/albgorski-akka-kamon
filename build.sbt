@@ -40,10 +40,8 @@ assemblyJarName in assembly := s"${name.value}.jar"
 // https://gist.github.com/colestanfield/fac042d3108b0c06e952
 val aopMerge: MergeStrategy = new MergeStrategy {
   val name = "aopMerge"
-
   import scala.xml._
   import scala.xml.dtd._
-
   def apply(tempDir: File, path: String, files: Seq[File]): Either[String, Seq[(File, String)]] = {
     val dt = DocType("aspectj", PublicID("-//AspectJ//DTD//EN", "http://www.eclipse.org/aspectj/dtd/aspectj.dtd"), Nil)
     val file = MergeStrategy.createMergeTarget(tempDir, path)
