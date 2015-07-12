@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "io.kamon" %% "kamon-statsd" % kamonVersion,
   "io.kamon" %% "kamon-log-reporter" % kamonVersion,
   "io.kamon" %% "kamon-system-metrics" % kamonVersion,
-  "org.aspectj" % "aspectjweaver" % "1.8.4" % "provided"
+  "org.aspectj" % "aspectjweaver" % "1.8.5" % "provided"
 )
 
 javaOptions in run ++= Seq(

@@ -11,5 +11,5 @@ sbt clean assembly
 ```
 
 ```
-java -javaagent:/path/to/aspectjweaver.jar -jar target/scala-2.11/albgorski-akka-kamon.jar
+ java -Djava.library.path=/Users/albert.gorski/projects-scala/albgorski-akka-kamon/sigar -javaagent:/Users/albert.gorski/devel/aspectjweaver/aspectjweaver-1.8.6.jar -jar target/scala-2.11/albgorski-akka-kamon.jar
 ```
